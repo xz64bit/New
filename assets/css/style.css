@@ -75,13 +75,15 @@ h6 {
 	position: relative;
 	z-index: 3;
 	padding: 20px;
+	border: 1px solid #ffffff;
+	padding: 5px;
 
 }
 
 .header__logo img {
 	max-width: 100%;
 	display: block;
-	border: 1px solid #ffffff;
+
 }
 
 
@@ -230,6 +232,10 @@ img {
 @media (max-width: 767px) {
 	body.lock {
 		overflow: hidden;
+	}
+
+	.header__logo {
+		flex: 0 0 100px;
 	}
 
 	.header:before {
