@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<title>New</title>
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body>
+
+		<!--================================= МЕНЮ И БУРГЕР ===================== -->
+
+		<div class="wrapper">
+			<header class="header" id="header">
+				<div class="container">
+					<div class="header__body">
+						<div class="header__logo"><img src="/assets/img/logo.png" alt=""></div>
+						<div class="header__burger">
+							<span></span>
+						</div>
+
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="#" class="header__link-home">Home</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Email</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Site</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Feature</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">History</a>
+								</li>
+								<li>
+									<a href="#" class="header__button">YouTube</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<!--================================= МЕНЮ И БУРГЕР КОНЕЦ ===================== -->
+
+
+		<img src="/assets/img/bg-mine.png" alt="">
+
+
+
+
+		<section class="particle">
+			<div class="text_particle">
+				<p>Not working on mobile devices!!!</p>
+			</div>
+
+			<div class="mine3">
+
+				<img class="part" src="/assets/img/logo.jpg" id="logo" alt="Logo" />
+			</div>
+		</section>
+
+
+		<script src="/assets/js/nextparticle.min.js"></script>
+		<script>
+			nextParticle = new NextParticle({
+				image: document.all.logo,
+				width: window.innerWidth,
+				height: window.innerHeight,
+				maxWidth: window.innerWidth * 0.8,
+				particleGap: 2
+			});
+			window.onresize = function () {
+				if (window.innerWidth > 600) {
+					nextParticle.width = window.innerWidth - 20;
+					nextParticle.height = window.innerHeight - 20;
+					nextParticle.start();
+				}
+			};
+		</script>
+
+
+
+		<!--================================= КОНЕЦ СТРАНИЦЫ ===================== -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+
+</html>
